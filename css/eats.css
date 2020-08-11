@@ -11,13 +11,9 @@
 	.green-offer-button {
 		margin-top:10px;
 	}
-	.food-delivery-col {
+	.food-delivery-col, .meal-kit-col {
 		padding-right: 30px;
-    	padding-left: 45px;
-	}
-	.meal-kit-col {
-		padding-right: 30px;
-    	padding-left: 45px;
+    	padding-left: 30px;
 	}
 }
 @media only screen and (max-width: 300px) {
