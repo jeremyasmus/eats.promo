@@ -10,136 +10,12 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://getbootstrap.com/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+<link rel="stylesheet" href="css/eats.css">
 </head>
 
 <body style="background-color:#F7F7F7">
-	<style>
-		.offer-box {
-			background:#ffffff;
-			border:1px solid #e2e2e2;
-			border-radius:5px;
-			box-shadow:rgba(0, 0, 0, 0.05) 0px 3px 8px;
-			/*height:100%;*/
-			margin-bottom:25px;
-			position:relative;
-		}
-		.offer-box .container, .offer-box .row {
-			height:100%;
-		}
-		.offer-logo {
-			display:flex;
-			align-items:center;
-			justify-content:center;
-			height:100px;
-			border-radius:5px 5px 0 0;
-		}
-		.offer-logo img {
-			width:200px;
-		}
-		.offer-bullets {
-			display:flex;
-			flex-direction:column;
-			justify-content:space-around;
-			padding:25px;
-		}
-		.offer-coupon {
-			display:flex;
-			flex-direction:column;
-			justify-content:center;
-			align-items:center;
-		}
-		.coupon-clip {
-			border:2px dashed #0277bd;
-			border-radius:3px;
-			padding:15px;
-			text-transform:uppercase;
-			line-height:20px;
-			color:#424d56;
-			background-color:rgb(2,119,189,.1);
-			width:100%
-		}
-		.coupon-clip img {
-			height:50px;
-			margin-right:12px;
-			display:inline-block;
-			vertical-align:middle;
-		}
-		.coupon-promo {
-			display:inline-block;
-			vertical-align:middle;
-			font-size:20px;
-		}
-		.coupon-promo span {
-			font-weight:700;
-			font-size:26px;
-		}
-		.offer-cta {
-			display:flex;
-			flex-direction:column;
-			justify-content:center;
-			align-items:center;
-			text-align:center;
-		}
-		.green-offer-button {
-			color:#fff;
-			background-color:#499300;
-			display:inline-block;
-			font-weight:400;
-			text-align:center;
-			white-space:nowrap;
-			vertical-align:middle;
-			cursor:pointer;
-			-webkit-user-select:none;
-			-moz-user-select:none;
-			-ms-user-select:none;
-			user-select:none;
-			border:.08333rem solid transparent;
-			padding:.75rem 1.25rem;
-			font-size:1.1rem;
-			line-height:1.5;
-			border-radius:3px;
-			width:100%;
-		}
-		.green-offer-button:hover {
-			color:#fff;
-			background-color:rgba(73, 147, 0, 0.7);
-			text-decoration:none;
-		}
-		.homepage-hero {
-			background-image:url('/images/postmates-hero.jpg');
-			padding:50px 0;
-			position:relative;
-    		background-color:#fff;
-    		background-repeat:no-repeat;
-    		background-position:50% 50%;
-    		background-size:cover;
-			overflow:hidden;
-		}
-		.homepage-hero:before {
-			background-color:#000000 !important;
-    		opacity:.6 !important;
-			top:0;
-			right:0;
-			bottom:0;
-			left:0;
-			content:"";
-    		position:absolute;
-		}
-		h1 {
-			font-family:Fedra,Tahoma,sans-serif;
-    		font-weight:lighter;
-			font-size:45px;
-    		line-height:1.11111em;
-    		margin-bottom:35px;
-		}
-		h2 {
-			font-family:Fedra,Tahoma,sans-serif;
-    		font-weight:lighter;
-			font-size:24px;
-    		line-height:1.11111em;
-		}
-	</style>
-	
+
 	<div class="homepage-hero">
     	<div class="container" style="position:relative">
         	<div style="text-align:center">
@@ -150,13 +26,13 @@
     </div>
 	<div class="container" style="padding:50px 0">
 		<div class="row">
-			<div class="col-sm-6">
-				<h3>Food delivery side</h3>
+			<div class="col-md-12 col-lg-6">
+				<h3>Food delivery column</h3>
 				<div id="postmates-offer" class="offer-box">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 offer-logo" style="background-color:#000000">
-								<img class="img-fluid" src="/images/eats-promo-postmates-logo-white.png">
+								<img class="img-fluid" src="images/eats-promo-postmates-logo-white.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -169,18 +45,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/delivery-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/delivery-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -190,7 +66,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12 offer-logo" style="background-color:#ff3109">
-								<img class="img-fluid" src="/images/eats-promo-doordash-logo-white.png">
+								<img class="img-fluid" src="images/eats-promo-doordash-logo-white.png">
 							</div>
 							<div class="col-sm-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -203,18 +79,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/delivery-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/delivery-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -224,7 +100,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 offer-logo" style="background-color:#f63440">
-								<img class="img-fluid" src="/images/eats-promo-grubhub-logo-white.png">
+								<img class="img-fluid" src="images/eats-promo-grubhub-logo-white.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -237,18 +113,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/delivery-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/delivery-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -258,7 +134,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 offer-logo" style="background-color:#000000">
-								<img class="img-fluid" src="/images/eats-promo-uber-eats-logo-white.png">
+								<img class="img-fluid" src="images/eats-promo-uber-eats-logo-white.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -271,18 +147,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/delivery-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/delivery-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -293,7 +169,7 @@
 						<div class="row">
 							<div class="col-md-12 offer-logo" style="background-color:#f7f7f7">
 							<!--<div class="col-md-12 offer-logo" style="background-color:#43b02a; border-radius:5px 5px 0 0;">-->
-								<img class="img-fluid" src="/images/eats-promo-instacart-logo.png">
+								<img class="img-fluid" src="images/eats-promo-instacart-logo.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -306,31 +182,31 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/delivery-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/delivery-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
 					</div>
               	</div>
 			</div>
-			<div class="col-sm-6">
-				<h3>Food box side</h3>
-				<div id="hello-fresh-offer" class="offer-box">
+			<div class="col-md-12 col-lg-6">
+				<h3>Meal kit column</h3>
+				<div id="hellofresh-offer" class="offer-box">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12 offer-logo" style="background-color:#000000">
-								<img class="img-fluid" src="/images/eats-promo-postmates-logo-white.png">
+							<div class="col-md-12 offer-logo" style="background-color:#f7f7f7">
+								<img class="img-fluid" src="images/eats-promo-hellofresh-logo.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -343,18 +219,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/food-box-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/food-box-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -363,8 +239,8 @@
 				<div id="offer2" class="offer-box">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12 offer-logo" style="background-color:#000000">
-								<img class="img-fluid" src="/images/eats-promo-postmates-logo-white.png">
+							<div class="col-md-12 offer-logo" style="background-color:#fcca4c">
+								<img class="img-fluid" src="images/eats-promo-marley-spoon-logo-white.png" style="width: 150px">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -377,18 +253,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/food-box-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/food-box-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -398,7 +274,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 offer-logo" style="background-color:#000000">
-								<img class="img-fluid" src="/images/eats-promo-postmates-logo-white.png">
+								<img class="img-fluid" src="images/eats-promo-postmates-logo-white.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -411,18 +287,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/food-box-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/food-box-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -432,7 +308,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 offer-logo" style="background-color:#000000">
-								<img class="img-fluid" src="/images/eats-promo-postmates-logo-white.png">
+								<img class="img-fluid" src="images/eats-promo-postmates-logo-white.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -445,18 +321,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/food-box-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/food-box-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
@@ -466,7 +342,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 offer-logo" style="background-color:#000000">
-								<img class="img-fluid" src="/images/eats-promo-postmates-logo-white.png">
+								<img class="img-fluid" src="images/eats-promo-postmates-logo-white.png">
 							</div>
 							<div class="col-md-12 offer-bullets">
 								<ul style="margin-bottom:0">
@@ -479,18 +355,18 @@
 								<div class="coupon-clip">
 									<div class="container">
 										<div class="row">
-											<div class="col-md-6" style="text-align:center">
-												<img src="/images/food-box-offer-icon.png">
+											<div class="col-sm-6" style="text-align:center">
+												<img src="images/food-box-offer-icon.png">
 												<div class="coupon-promo"><span>$10 off</span><br>first order</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-sm-6">
 												<a href="#" class="green-offer-button">CLAIM OFFER</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 offer-cta">
+							<div class="col-md-12 detail-cta">
 								<p style="margin:10px 0 25px 0"><a href="#" style="color:#0277bd">Detail page link</a></p>
 							</div>
 						</div>
