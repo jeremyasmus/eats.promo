@@ -11,13 +11,21 @@
 	.green-offer-button {
 		margin-top:10px;
 	}
+	.food-delivery-col {
+		padding-right: 30px;
+    	padding-left: 45px;
+	}
+	.meal-kit-col {
+		padding-right: 30px;
+    	padding-left: 45px;
+	}
 }
 @media only screen and (max-width: 300px) {
 	.coupon-clip img {
 		margin-bottom:10px;
 	}
 }
-
+    
 
 .offer-box {
   background: #ffffff;
