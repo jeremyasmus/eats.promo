@@ -22,7 +22,7 @@
 	}
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
 	.green-offer-button {
 		margin-top:10px;
 	}
