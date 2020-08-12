@@ -28,6 +28,45 @@
 	}
 }
     
+body {
+	background-color: #F7F7F7;
+	position: relative
+}
+
+.homepage-hero {
+  background-image: url('../images/postmates-hero.jpg');
+  padding: 50px 0;
+  position: relative;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+.homepage-hero:before {
+  background-color: #000000 !important;
+  opacity: .6 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+}
+h1 {
+  font-family: Fedra, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 45px;
+  line-height: 1.11111em;
+  margin-bottom: 35px;
+}
+h2 {
+  font-family: Fedra, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 1.11111em;
+}
 
 .offer-box {
   background: #ffffff;
@@ -62,6 +101,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 25px
 }
 .coupon-clip {
   border: 2px dashed #0277bd;
@@ -95,6 +135,12 @@
   align-items: center;
   text-align: center;
 }
+.detail-cta p {
+	margin: 10px 0 25px 0;
+}
+.detail-cta a {
+	color: #0277bd;
+}
 .green-offer-button {
   color: #fff;
   background-color: #499300;
@@ -119,37 +165,4 @@
   color: #fff;
   background-color: rgba(73, 147, 0, 0.7);
   text-decoration: none;
-}
-.homepage-hero {
-  background-image: url('../images/postmates-hero.jpg');
-  padding: 50px 0;
-  position: relative;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  overflow: hidden;
-}
-.homepage-hero:before {
-  background-color: #000000 !important;
-  opacity: .6 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  position: absolute;
-}
-h1 {
-  font-family: Fedra, Tahoma, sans-serif;
-  font-weight: lighter;
-  font-size: 45px;
-  line-height: 1.11111em;
-  margin-bottom: 35px;
-}
-h2 {
-  font-family: Fedra, Tahoma, sans-serif;
-  font-weight: lighter;
-  font-size: 24px;
-  line-height: 1.11111em;
 }
