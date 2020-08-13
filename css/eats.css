@@ -125,6 +125,7 @@ h2 {
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
+  line-height: 25px;
 }
 .coupon-promo span {
   font-weight: 700;
