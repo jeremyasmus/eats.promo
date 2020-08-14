@@ -1,38 +1,33 @@
 @charset "utf-8";
 /* CSS Document */
-
 /* xs <576px */
 /* sm ≥576px	*/
 /* md ≥768px */
 /* lg ≥992px */
 /* xl ≥1200px */
-
 @media only screen and (max-width: 575px) {
-	.green-offer-button {
-		margin-top:10px;
-	}
-	.food-delivery-col, .meal-kit-col {
-		padding-right: 30px;
-    	padding-left: 30px;
-	}
+  .green-offer-button {
+    margin-top: 10px;
+  }
+  .food-delivery-col, .meal-kit-col {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 @media only screen and (max-width: 300px) {
-	.coupon-clip img {
-		margin-bottom:10px;
-	}
+  .coupon-clip img {
+    margin-bottom: 10px;
+  }
 }
-
 @media only screen and (min-width: 768px) {
-	.green-offer-button {
-		margin-top:10px;
-	}
+  .green-offer-button {
+    margin-top: 10px;
+  }
 }
-    
 body {
-	background-color: #F7F7F7;
-	position: relative
+  background-color: #F7F7F7;
+  position: relative
 }
-
 .homepage-hero {
   background-image: url('../images/postmates-hero.jpg');
   padding: 50px 0;
@@ -67,7 +62,6 @@ h2 {
   font-size: 24px;
   line-height: 1.11111em;
 }
-
 .offer-box {
   background: #ffffff;
   border: 1px solid #e2e2e2;
@@ -113,7 +107,7 @@ h2 {
   /*border: 2px dashed #0277bd;
   background-color: rgb(2, 119, 189, .1);*/
   border: 2px dashed rgba(66, 77, 86, 0.4);
-  background-color:rgba(67, 67, 67, 0.069);
+  background-color: rgba(67, 67, 67, 0.069);
 }
 .coupon-clip img {
   height: 50px;
@@ -139,10 +133,10 @@ h2 {
   text-align: center;
 }
 .detail-cta p {
-	margin: 10px 0 25px 0;
+  margin: 10px 0 25px 0;
 }
 .detail-cta a {
-	color: #0277bd;
+  color: #0277bd;
 }
 .green-offer-button {
   color: #fff;
@@ -169,3 +163,38 @@ h2 {
   background-color: rgba(73, 147, 0, 0.7);
   text-decoration: none;
 }
+.about-food-delivery {
+  background-image: url('../images/backgrounds/pasta-background.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  padding: 0 15px 0 15px;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  color: #F7F7F7;
+  background-position: center;
+}
+.about-meal-kits {
+  background-image: url('../images/backgrounds/salmon-background.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  padding: 0 15px 0 15px;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  color: #F7F7F7;
+  background-position: center;
+}
+.about-text-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border-radius: 5px;
+}
+.about-text-bg h4 {
+	font-size: 18px;
+	font-weight: 500;
+}
+.about-text-bg p {
+	margin-bottom: 0;
+}
+
+
+
