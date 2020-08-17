@@ -197,6 +197,9 @@ h2 {
 .about-text-bg p {
 	margin-bottom: 0;
 }
+.extras-col {
+	display: none;
+}
 
 .footer {
 	padding: 25px 30px;
