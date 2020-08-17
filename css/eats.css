@@ -70,6 +70,7 @@ h2 {
   /*height:100%;*/
   margin-bottom: 25px;
   position: relative;
+  padding-bottom: 25px;
 }
 .offer-box .container, .offer-box .row {
   height: 100%;
@@ -118,22 +119,23 @@ h2 {
 .coupon-promo {
   display: inline-block;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 25px;
 }
 .coupon-promo span {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 18px;
 }
 .detail-cta {
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  display: none;
 }
 .detail-cta p {
-  margin: 10px 0 25px 0;
+  margin: 10px 0 0 0;
 }
 .detail-cta a {
   color: #0277bd;
