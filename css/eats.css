@@ -6,7 +6,7 @@
 /* lg ≥992px */
 /* xl ≥1200px */
 @media only screen and (max-width: 575px) {
-  .green-offer-button {
+  .green-offer-button, .yellow-offer-button {
     margin-top: 10px;
   }
   .food-delivery-col, .meal-kit-col, .about-food-delivery-col, .about-meal-kits-col, .extras-col {
@@ -20,7 +20,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .green-offer-button {
+  .green-offer-button, .yellow-offer-button {
     margin-top: 10px;
   }
 }
@@ -33,6 +33,20 @@
   .main-navigation li {
 	font-size: 17px !important;
 	margin: 0 15px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main-navigation {
+	display: none !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .hamburger, .hamburger-dropdown {
+	display: none !important;
+  }
+}@media only screen and (max-width: 300px) {
+  .hamburger, .hamburger-dropdown {
+	display: none !important;
   }
 }
 body {
@@ -66,6 +80,45 @@ body {
   text-decoration: none;
   border-top: 2px solid #f79800;
   border-bottom: 2px solid #f79800;
+}
+.hamburger {
+	display:inline-flex;
+	position:absolute;
+	right:0;
+	margin-top:7px;
+}
+.hamburger-dropdown {
+	position:absolute;
+	right:0px;
+	top:70px;
+	width:100%;
+	z-index:9999;
+}
+.hamburger-menu {
+	background-color: #343a40;
+	padding: 25px;
+	text-transform: uppercase;
+}
+.hamburger-menu h5 {
+	color: #ffffff;
+}
+.hamburger-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.hamburger-menu li {
+	line-height: normal;
+	font-size: 17px;
+	padding: 8px 0;
+	border-bottom: 1px solid rgb(255,255,255,.25);
+}
+.hamburger-menu li a {
+	color: rgb(255,255,255,.5);
+}
+.hamburger-menu li a:hover {
+	color: #f79800;
+	text-decoration: none;
 }
 .main-logo {
   width: 200px;
@@ -208,6 +261,32 @@ h2 {
 .green-offer-button:hover {
   color: #fff;
   background-color: rgba(73, 147, 0, 0.7);
+  text-decoration: none;
+}
+.yellow-offer-button {
+  color: #0F1111;
+  background-color: #FFD814;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: .08333rem solid #ced1d2;
+  padding: .75rem 1.25rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+}
+.yellow-offer-button:hover {
+  color: #0F1111;
+  background-color: #F7CA00;
   text-decoration: none;
 }
 .about-food-delivery {
