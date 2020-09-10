@@ -61,6 +61,7 @@ body {
 .main-navigation {
   display: inline-block;
   vertical-align: middle;
+  display: none;
 }
 .main-navigation ul {
   margin: 0;
@@ -86,6 +87,7 @@ body {
 	position:absolute;
 	right:0;
 	margin-top:7px;
+	display: none;
 }
 .hamburger-dropdown {
 	position:absolute;
