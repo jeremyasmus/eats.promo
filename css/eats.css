@@ -6,7 +6,7 @@
 /* lg ≥992px */
 /* xl ≥1200px */
 @media only screen and (max-width: 575px) {
-  .green-offer-button, .yellow-offer-button {
+  .green-offer-button, .yellow-offer-button, .orange-offer-button {
     margin-top: 10px;
   }
   .food-delivery-col, .meal-kit-col, .about-food-delivery-col, .about-meal-kits-col, .extras-col {
@@ -20,7 +20,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .green-offer-button, .yellow-offer-button {
+  .green-offer-button, .yellow-offer-button, .orange-offer-button {
     margin-top: 10px;
   }
 }
