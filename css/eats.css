@@ -201,7 +201,6 @@ h2 {
 .coupon-clip {
   border-radius: 3px;
   padding: 15px;
-  text-transform: uppercase;
   line-height: 20px;
   color: #424d56;
   width: 100%;
@@ -219,12 +218,13 @@ h2 {
 .coupon-promo {
   display: inline-block;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
 }
 .coupon-promo span {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 .detail-cta {
   /*display: flex;*/
