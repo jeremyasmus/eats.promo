@@ -259,7 +259,7 @@ h2 {
   color: #0277bd;
 }
 .featured-tiles .detail-cta {
-  display: block !important;
+  display: none !important;
 }
 .green-offer-button {
   color: #fff;
