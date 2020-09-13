@@ -9,9 +9,15 @@
   .green-offer-button, .yellow-offer-button, .orange-offer-button {
     margin-top: 10px;
   }
-  .food-delivery-col, .meal-kit-col, .about-food-delivery-col, .about-meal-kits-col, .extras-col {
+  .food-delivery-col, .meal-kit-col, .about-food-delivery-col, .about-meal-kits-col, .extras-col, .category-col {
     padding-right: 30px;
     padding-left: 30px;
+  }
+  h1 {
+    font-size: 1.3rem !important;
+  }
+  .hero-text {
+    padding: 0 25px !important;
   }
 }
 @media only screen and (max-width: 300px) {
@@ -28,25 +34,32 @@
   .homepage-hero {
     text-align: center;
   }
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  .hero-text {
+    padding: 0 40px !important;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .main-navigation li {
-	font-size: 17px !important;
-	margin: 0 15px !important;
+    font-size: 17px !important;
+    margin: 0 15px !important;
   }
 }
 @media only screen and (max-width: 992px) {
   .main-navigation {
-	display: none !important;
+    display: none !important;
   }
 }
 @media only screen and (min-width: 993px) {
   .hamburger, .hamburger-dropdown {
-	display: none !important;
+    display: none !important;
   }
-}@media only screen and (max-width: 300px) {
+}
+@media only screen and (max-width: 300px) {
   .hamburger, .hamburger-dropdown {
-	display: none !important;
+    display: none !important;
   }
 }
 body {
@@ -54,14 +67,14 @@ body {
   position: relative
 }
 .navigation-bar {
-  background-color: rgba(0,0,0,0.90);
-  height:70px;
-  line-height:75px;
+  background-color: rgba(0, 0, 0, 0.90);
+  height: 70px;
+  line-height: 75px;
 }
 .main-navigation {
   display: inline-block;
   vertical-align: middle;
-  display: none;
+  /*display: none;*/
 }
 .main-navigation ul {
   margin: 0;
@@ -71,10 +84,10 @@ body {
   display: inline-block;
   text-transform: uppercase;
   font-size: 18px;
-  margin:0 20px;
+  margin: 0 20px;
 }
 .main-navigation a {
-  color:#eeeeee;
+  color: #eeeeee;
   font-weight: 400;
 }
 .main-navigation a:hover {
@@ -83,50 +96,50 @@ body {
   border-bottom: 2px solid #f79800;
 }
 .hamburger {
-	display:inline-flex;
-	position:absolute;
-	right:0;
-	margin-top:7px;
-	display: none;
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  margin-top: 7px;
+  /*display: none;*/
 }
 .hamburger-dropdown {
-	position:absolute;
-	right:0px;
-	top:70px;
-	width:100%;
-	z-index:9999;
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  width: 100%;
+  z-index: 9999;
 }
 .hamburger-menu {
-	background-color: #343a40;
-	padding: 25px;
-	text-transform: uppercase;
+  background-color: #343a40;
+  padding: 25px;
+  text-transform: uppercase;
 }
 .hamburger-menu h5 {
-	color: #ffffff;
+  color: #ffffff;
 }
 .hamburger-menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .hamburger-menu li {
-	line-height: normal;
-	font-size: 17px;
-	padding: 8px 0;
-	border-bottom: 1px solid rgb(255,255,255,.25);
+  line-height: normal;
+  font-size: 17px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgb(255, 255, 255, .25);
 }
 .hamburger-menu li a {
-	color: rgb(255,255,255,.5);
+  color: rgb(255, 255, 255, .5);
 }
 .hamburger-menu li a:hover {
-	color: #f79800;
-	text-decoration: none;
+  color: #f79800;
+  text-decoration: none;
 }
 .main-logo {
   width: 200px;
   display: inline-block;
   vertical-align: middle;
-  margin-top:-10px;
+  margin-top: -10px;
 }
 .homepage-hero {
   background-image: url('../images/postmates-hero.jpg');
@@ -138,6 +151,7 @@ body {
   background-size: cover;
   overflow: hidden;
   color: #FFFFFF;
+  text-align: center;
 }
 .homepage-hero:before {
   background-color: #000000 !important;
@@ -149,17 +163,21 @@ body {
   content: "";
   position: absolute;
 }
+.hero-text {
+  position: relative;
+  padding: 0 100px;
+}
 h1 {
   font-family: Fedra, Tahoma, sans-serif;
-  font-weight: lighter;
-  font-size: 36px;
-  line-height: 1.11111em;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 1.3em;
   margin: 10px 0;
 }
 h2 {
   font-family: Fedra, Tahoma, sans-serif;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.2rem;
   line-height: 1.11111em;
 }
 .offer-box {
@@ -240,6 +258,9 @@ h2 {
 .detail-cta a {
   color: #0277bd;
 }
+.featured-tiles .detail-cta {
+  display: block !important;
+}
 .green-offer-button {
   color: #fff;
   background-color: #499300;
@@ -284,7 +305,7 @@ h2 {
   line-height: 1.5;
   border-radius: 3px;
   width: 100%;
-  box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
 }
 .yellow-offer-button:hover {
   color: #0F1111;
@@ -310,7 +331,7 @@ h2 {
   line-height: 1.5;
   border-radius: 3px;
   width: 100%;
-  box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
 }
 .orange-offer-button:hover {
   color: #0F1111;
@@ -343,18 +364,81 @@ h2 {
   border-radius: 5px;
 }
 .about-text-bg h4 {
-	font-size: 18px;
-	font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
 .about-text-bg p {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .extras-col {
+  display: block;
+}
+.featured-tiles {
+  padding: 50px 0 25px 0;
+}
+.category-tiles {
+  padding: 0 0 25px 0;
+}
+.restaurant-tiles {
+	padding:50px 0 25px 0;
+	background-color:#cacccf;
 	display: none;
 }
-
-.footer {
-	padding: 25px 30px;
-	background-color: #20272b;
+.featured-tiles h3, .category-tiles h3, .restaurant-tiles h3 {
+  font-family: Fedra, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  color: #424d56;
+  text-align: center;
+  margin-bottom: 25px;
 }
-
+.category-box {
+  background: #333333;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  position: relative;
+  padding: 0;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  color: #F7F7F7;
+  height: 180px;
+}
+.category-box .container, .category-box .row {
+  height: 100%;
+}
+.category-text {
+  background: rgba(0, 0, 0, 0.69);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  padding: 15px 0;
+}
+.category-box h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.category-box:hover {
+  color: #f79800;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+.meal-kits-bg {
+  background-image: url("../images/backgrounds/meal-kits-thumb-bg.jpg");
+}
+.subscription-boxes-bg {
+  background-image: url("../images/backgrounds/subscription-boxes-thumb-bg.jpg");
+}
+.gourmet-bg {
+  background-image: url("../images/backgrounds/gourmet-thumb-bg.jpg");
+}
+.food-delivery-bg {
+  background-image: url("../images/backgrounds/food-delivery-thumb-bg.jpg");
+}
+.footer {
+  padding: 25px 30px;
+  background-color: #20272b;
+}
