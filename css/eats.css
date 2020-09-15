@@ -66,6 +66,16 @@ body {
   background-color: #F7F7F7;
   position: relative
 }
+
+/***************************/
+/*****NAVIGATION STYLES*****/
+/***************************/
+.main-logo {
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -10px;
+}
 .navigation-bar {
   background-color: rgba(0, 0, 0, 0.90);
   height: 70px;
@@ -74,7 +84,6 @@ body {
 .main-navigation {
   display: inline-block;
   vertical-align: middle;
-  /*display: none;*/
 }
 .main-navigation ul {
   margin: 0;
@@ -100,7 +109,6 @@ body {
   position: absolute;
   right: 0;
   margin-top: 7px;
-  /*display: none;*/
 }
 .hamburger-dropdown {
   position: absolute;
@@ -125,7 +133,7 @@ body {
 .hamburger-menu li {
   line-height: normal;
   font-size: 17px;
-  padding: 8px 0;
+  padding: 12px 0;
   border-bottom: 1px solid rgb(255, 255, 255, .25);
 }
 .hamburger-menu li a {
@@ -135,12 +143,10 @@ body {
   color: #f79800;
   text-decoration: none;
 }
-.main-logo {
-  width: 200px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -10px;
-}
+
+/*********************/
+/*****HERO STYLES*****/
+/*********************/
 .homepage-hero {
   background-image: url('../images/postmates-hero.jpg');
   padding: 50px 0;
@@ -180,6 +186,10 @@ h2 {
   font-size: 1.2rem;
   line-height: 1.11111em;
 }
+
+/************************/
+/*****OFFEERS STYLES*****/
+/************************/
 .offer-box {
   background: #ffffff;
   border: 1px solid #e2e2e2;
@@ -261,6 +271,10 @@ h2 {
 .featured-tiles .detail-cta {
   display: none !important;
 }
+
+/********************/
+/*****CTA STYLES*****/
+/********************/
 .green-offer-button {
   color: #fff;
   background-color: #499300;
@@ -338,6 +352,10 @@ h2 {
   background-color: #ea9000;
   text-decoration: none;
 }
+
+/*******************************/
+/*****ABOUT CATEGORY STYLES*****/
+/*******************************/
 .about-meal-kits {
   background-image: url("../images/backgrounds/meal-kits-thumb-bg.jpg");
   background-size: cover;
@@ -390,6 +408,10 @@ h2 {
 .about-text-bg p {
   margin-bottom: 0;
 }
+
+/******************************/
+/*****HOMEPAGE TILE STYLES*****/
+/******************************/
 .extras-col {
   display: block;
 }
@@ -412,6 +434,10 @@ h2 {
   text-align: center;
   margin-bottom: 25px;
 }
+
+/*****************************/
+/*****CATEGORY BOX STYLES*****/
+/*****************************/
 .category-box {
   background: #333333;
   background-size: cover;
@@ -458,6 +484,10 @@ h2 {
 .food-delivery-bg {
   background-image: url("../images/backgrounds/food-delivery-thumb-bg.jpg");
 }
+
+/***********************/
+/*****FOOTER STYLES*****/
+/***********************/
 .footer {
   padding: 25px 30px;
   background-color: #20272b;
