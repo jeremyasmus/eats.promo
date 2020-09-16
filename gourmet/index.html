@@ -39,8 +39,8 @@
 </script>
 <script type="text/javascript">
   $(document).ready(function() {
-    if (window.location.href.indexOf('?offer=pipcorn') > 0) {
-      $('#pipcornPromo').modal('show');
+    if (window.location.href.indexOf('?offer=pipcorn') > -1) {
+      $('#pipcornPromo').modal();
     }
   });
 </script>
