@@ -31,12 +31,14 @@ function copyPromoCode() {
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
+  
   var tooltip = document.getElementById("promoCodeTooltip");
-  alert("Promo code copied: " + copyText.value);
+  tooltip.innerHTML = "Copied: " + copyText.value;
 }
+
 function outFunc() {
   var tooltip = document.getElementById("promoCodeTooltip");
-  tooltip.innerHTML = "Copy promo code";
+  tooltip.innerHTML = "Copy to clipboard";
 }
 </script>
 	
@@ -55,8 +57,8 @@ function outFunc() {
 
 <body>
 	
-	<style>
-	.tooltip {
+<style>
+.tooltip {
   position: relative;
   display: inline-block;
 }
@@ -93,7 +95,8 @@ function outFunc() {
   visibility: visible;
   opacity: 1;
 }
-	</style>
+</style>
+	
 <div class="navigation-bar">
 	<div class="collapse hamburger-dropdown" id="navbarToggleExternalContent">
       <div class="hamburger-menu">
@@ -475,9 +478,12 @@ function outFunc() {
 		  </div>
 		  <div class="modal-body">
 			<input type="text" value="PROMO69" id="promoCode">
-			  <div class="tooltip">
-				<button onclick="copyPromoCode()" onmouseout="outFunc()"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>Copy promo code</button>
-			  </div>
+            <div class="tooltip">
+            <button onclick="copyPromoCode()" onmouseout="outFunc()">
+              <span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>
+              Copy promo code
+              </button>
+            </div>
 		  </div>
 		  <div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
