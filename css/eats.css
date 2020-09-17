@@ -66,7 +66,6 @@ body {
   background-color: #F7F7F7;
   position: relative
 }
-
 /***************************/
 /*****NAVIGATION STYLES*****/
 /***************************/
@@ -143,7 +142,6 @@ body {
   color: #f79800;
   text-decoration: none;
 }
-
 /*********************/
 /*****HERO STYLES*****/
 /*********************/
@@ -186,7 +184,6 @@ h2 {
   font-size: 1.2rem;
   line-height: 1.11111em;
 }
-
 /************************/
 /*****OFFEERS STYLES*****/
 /************************/
@@ -271,7 +268,6 @@ h2 {
 .featured-tiles .detail-cta {
   display: none !important;
 }
-
 /********************/
 /*****CTA STYLES*****/
 /********************/
@@ -352,7 +348,6 @@ h2 {
   background-color: #ea9000;
   text-decoration: none;
 }
-
 /*******************************/
 /*****ABOUT CATEGORY STYLES*****/
 /*******************************/
@@ -408,7 +403,6 @@ h2 {
 .about-text-bg p {
   margin-bottom: 0;
 }
-
 /******************************/
 /*****HOMEPAGE TILE STYLES*****/
 /******************************/
@@ -422,9 +416,9 @@ h2 {
   padding: 0 0 25px 0;
 }
 .restaurant-tiles {
-	padding:50px 0 25px 0;
-	background-color:#cacccf;
-	display: none;
+  padding: 50px 0 25px 0;
+  background-color: #cacccf;
+  display: none;
 }
 .featured-tiles h3, .category-tiles h3, .restaurant-tiles h3 {
   font-family: Fedra, Tahoma, sans-serif;
@@ -434,7 +428,6 @@ h2 {
   text-align: center;
   margin-bottom: 25px;
 }
-
 /*****************************/
 /*****CATEGORY BOX STYLES*****/
 /*****************************/
@@ -484,11 +477,95 @@ h2 {
 .food-delivery-bg {
   background-image: url("../images/backgrounds/food-delivery-thumb-bg.jpg");
 }
-
 /***********************/
 /*****FOOTER STYLES*****/
 /***********************/
 .footer {
   padding: 25px 30px;
   background-color: #20272b;
+}
+/*********************************/
+/*****PROMO CODE MODAL STYLES*****/
+/*********************************/
+.tooltip {
+  position: inherit;
+  display: inline-block;
+  opacity: inherit !important;
+  float: right;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  margin-left: -40px;
+  transition: opacity 0.3s;
+  font-size: 1rem
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.promo-code-copy-button {
+  color: #222222;
+  background-color: #FFC723;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: .50rem 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-promo-code-clip {
+  border: 1px solid #FFC723;
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 50px;
+  background: rgba(255, 199, 35, .069);
+}
+.modal-promo-code-input {
+  padding: 0;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  max-width: 250px;
+  font-weight: 700;
+  font-family: sans-serif;
+  user-select: none;
+  border: none;
+  text-align: center;
+  float: left;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  white-space: nowrap;
+  background: none;
 }

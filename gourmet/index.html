@@ -33,47 +33,7 @@
 </head>
 
 <body>
-	
-<style>
-.tooltip {
-  position: relative;
-  display: inline-block;
-  opacity: inherit !important;
-}
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
-	
 <div class="navigation-bar">
 	<div class="collapse hamburger-dropdown" id="navbarToggleExternalContent">
       <div class="hamburger-menu">
@@ -454,15 +414,14 @@
 			</button>
 		  </div>
 		  <div class="modal-body">
-			<input type="text" value="PROMO69" id="promoCode">
+			<div class="modal-promo-code-clip">
+			<input class="modal-promo-code-input" type="text" value="PROMO69" id="promoCode" disabled>
             <div class="tooltip">
-            <button onclick="copyPromoCode()" onmouseout="outFunc()" class="yellow-offer-button"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
+            <button onclick="copyPromoCode()" onmouseout="outFunc()" class="promo-code-copy-button" style="margin: 0;"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
             </div>
 		  </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-primary">Save changes</button>
 		  </div>
+		  <div class="modal-footer"></div>
 		</div>
 	  </div>
 	</div>
