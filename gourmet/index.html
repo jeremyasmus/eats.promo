@@ -30,6 +30,21 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<script>
+  function copyPromoCode() {
+    var copyText = document.getElementById("promoCode");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    var tooltip = document.getElementById("promoCodeTooltip");
+    tooltip.innerHTML =  copyText.value + " copied!";
+  }
+
+  function outFunc() {
+    var tooltip = document.getElementById("promoCodeTooltip");
+    tooltip.innerHTML = "Copy promo code";
+  }	
+</script>
 </head>
 
 <body>
