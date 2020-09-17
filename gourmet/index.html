@@ -33,7 +33,7 @@ function copyPromoCode() {
   document.execCommand("copy");
   
   var tooltip = document.getElementById("promoCodeTooltip");
-  tooltip.innerHTML = "Copied: " + copyText.value;
+  tooltip.innerHTML =  copyText.value + "copied!";
 }
 
 function outFunc() {
@@ -478,10 +478,7 @@ function outFunc() {
 		  <div class="modal-body">
 			<input type="text" value="PROMO69" id="promoCode">
             <div class="tooltip">
-            <button onclick="copyPromoCode()" onmouseout="outFunc()">
-              <span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>
-              Copy promo code
-              </button>
+            <button onclick="copyPromoCode()" onmouseout="outFunc()" class="yellow-offer-button"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
             </div>
 		  </div>
 		  <div class="modal-footer">
