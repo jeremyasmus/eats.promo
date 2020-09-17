@@ -33,12 +33,12 @@ function copyPromoCode() {
   document.execCommand("copy");
   
   var tooltip = document.getElementById("promoCodeTooltip");
-  tooltip.innerHTML =  copyText.value + "copied!";
+  tooltip.innerHTML =  copyText.value + " copied!";
 }
 
 function outFunc() {
   var tooltip = document.getElementById("promoCodeTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
+  tooltip.innerHTML = "Copy promo code";
 }
 </script>
 	
@@ -61,6 +61,7 @@ function outFunc() {
 .tooltip {
   position: relative;
   display: inline-block;
+  opacity: inherit !important;
 }
 
 .tooltip .tooltiptext {
