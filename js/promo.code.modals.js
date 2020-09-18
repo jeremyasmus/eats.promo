@@ -19,5 +19,7 @@ $(document).ready(function() {
     $('#pipcornPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=splendid-spoon') > -1) { 
 	$('#splendidSpoonPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=purple-carrot') > -1) { 
+	$('#purpleCarrotPromo').modal('show');
   }
 });
