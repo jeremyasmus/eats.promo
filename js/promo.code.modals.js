@@ -1,10 +1,16 @@
 // PROMO CODE MODAL TRIGGERS
 
-function copyPromoCode() {
-  var copyText = document.getElementById("promoCode");
+function copyPromoCode(elem) {
+  var targetElementID = elem.getAttribute("data-target");
+  var copyText = document.getElementById(targetElementID);
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
+  //var copyText = document.getElementById("promoCode");
+  //copyText.select();
+  //copyText.setSelectionRange(0, 99999);
+  //document.execCommand("copy");
+  
   var tooltip = document.getElementById("promoCodeTooltip");
   tooltip.innerHTML =  "Promo copied!";
 }
