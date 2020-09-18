@@ -17,7 +17,7 @@ function outFunc() {
 $(document).ready(function() {
   if (window.location.href.indexOf('?offer=pipcorn') > -1) {
     $('#pipcornPromo').modal('show');
-  } else if (window.location.href.indexOf('?offer=platejoy') > -1) { 
-	$('#platejoyPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=splendid-spoon') > -1) { 
+	$('#splendidSpoonPromo').modal('show');
   }
 });

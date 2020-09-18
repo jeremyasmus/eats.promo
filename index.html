@@ -11,21 +11,14 @@
 <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0, user-scalable=0, minimal-ui">
 <meta name="theme-color" content="#FFA000" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-<script src="https://getbootstrap.com/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script src="js/promo.code.modals.js"></script> 
 <link rel="stylesheet" href="css/eats.css" media="all">
-<script type="text/javascript">
-		  function copyToClipboard(element) {
-  			var $temp = $("<input>");
-  			$("body").append($temp);
-  			$temp.val($(element).text()).select();
-  			document.execCommand("copy");
-  			$temp.remove();
-		  }
-	   </script> 
+
 <!-- Hotjar Tracking Code for https://www.eats.promo -->
 <script>
     (function(h,o,t,j,a,r){
@@ -91,9 +84,9 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-6 col-md-12" style="text-align:center">
-                      <div class="coupon-promo"><span>$25 off</span> first order</div>
+                      <div class="coupon-promo"><span>$25 off</span> + free shipping</div>
                     </div>
-                    <div class="col-sm-6 col-md-12"> <a href="https://splendidspoon.z724.net/mealdeals-25off" target="_blank" class="green-offer-button">GET OFFER</a> </div>
+                    <div class="col-sm-6 col-md-12"> <a href="javascript:window.open('https://www.eats.promo/?offer=splendid-spoon');window.location.href='https://splendidspoon.z724.net/mealdeals-25off'" class="green-offer-button" data-toggle="modal" data-target="#exampleModalCenter">GET OFFER</a> </div>
                   </div>
                 </div>
               </div>
@@ -233,6 +226,39 @@
     <p style="text-align:center; color:#cacccf; margin-bottom:0">© 2020 All Right Reserved. This website contains information and promotional offers for a variety of food and grocery delivery services or home meal kits. All deals and promotions shown on this site are officially affiliated with each of the companies listed above.</p>
   </div>
 </div>
+	
+	
+<div class="modal fade" id="splendidSpoonPromo">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="offer-logo" style="background-color:#007c85">
+          <img class="img-fluid" src="images/logos/white/splendid-spoon-logo-300px.png" alt="Splendid Spoon" title="Splendid Spoon" style="width:150px">
+        </div>
+        <div class="modal-offer">
+            <h4>$25 off plus free shipping on your first order</h4>
+            <h5>Copy and paste this code during checkout</h5>
+        </div>
+        <div class="modal-promo-code-clip">
+          <input class="modal-promo-code-input" type="text" value="Wellness25Off" id="promoCode" readonly="readonly">
+          <div class="tooltip">
+            <button onclick="copyPromoCode()" onmouseout="outFunc()" class="promo-code-copy-button" style="margin: 0;"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Continue to <a href="https://splendidspoon.z724.net/mealdeals-25off" target="_blank" rel="sponsored">Splendid Spoon</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1413649-18"></script> 
 <script>
@@ -284,6 +310,5 @@ var r = d.getElementsByTagName(t)[0];
 r.parentNode.insertBefore(s, r);
 }(document, 'script'));
 </script>
-<script type="text/javascript" src="https://s.skimresources.com/js/170561X1638497.skimlinks.js"></script>
 </body>
 </html>
