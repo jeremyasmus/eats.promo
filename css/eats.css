@@ -19,6 +19,13 @@
   .hero-text {
     padding: 0 25px !important;
   }
+  .tooltip {
+	display: block !important;
+    float: none !important;
+  }
+  .modal-promo-code-input {
+	max-width: 100% !important;
+  }
 }
 @media only screen and (max-width: 300px) {
   .coupon-clip img {
@@ -543,6 +550,23 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
+.modal-header {
+  border: none;
+  padding: .5rem 1rem 0 1rem;
+}
+.modal-offer {
+  padding: 25px 0;
+  text-align: center;
+}
+.modal-offer h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.modal-offer h5 {
+  font-size: .9rem;
+  font-weight: 400;
+  color: #666666;
+}
 .modal-promo-code-clip {
   border: 1px solid #FFC723;
   padding: 5px;
@@ -568,4 +592,16 @@ h2 {
   vertical-align: middle;
   white-space: nowrap;
   background: none;
+}
+.modal-footer {
+  text-align: center;
+  display: block;
+  padding: .5rem;
+  background: #f9f9f9;
+}
+.modal-footer p {
+  margin-bottom: 0;
+}
+.modal-footer a {
+  color: #008ba0;
 }
