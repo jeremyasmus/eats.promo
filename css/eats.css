@@ -595,6 +595,7 @@ h2 {
   vertical-align: middle;
   white-space: nowrap;
   background: none;
+  outline: none;
 }
 .modal-footer {
   text-align: center;
