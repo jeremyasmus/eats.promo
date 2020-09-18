@@ -21,5 +21,7 @@ $(document).ready(function() {
 	$('#splendidSpoonPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=purple-carrot') > -1) { 
 	$('#purpleCarrotPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=freshly') > -1) { 
+	$('#freshlyPromo').modal('show');
   }
 });
