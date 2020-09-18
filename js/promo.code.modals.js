@@ -1,16 +1,16 @@
 // PROMO CODE MODAL TRIGGERS
 
 function copyPromoCode() {
-  var copyText = document.getElementsByClassName("modal-promo-code-input");
+  var copyText = document.getElementsByClassName('modal-promo-code-input');
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
-  var tooltip = document.getElementsByClassName("promo-code-copy-button");
+  var tooltip = document.getElementsByClassName('promo-code-copy-button');
   tooltip.innerHTML =  "Promo copied!";
 }
 
 function outFunc() {
-  var tooltip = document.getElementsByClassName("promo-code-copy-button");
+  var tooltip = document.getElementsByClassName('promo-code-copy-button');
   tooltip.innerHTML = "Copy promo code";
 }
 
