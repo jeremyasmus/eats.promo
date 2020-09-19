@@ -1,5 +1,9 @@
 // PROMO CODE MODAL TRIGGERS
 
+$(function(){
+  $("#homepagePromoCodeModals").load("../includes/homepage-promo-code-modals.html"); 
+});
+
 function copyPromoCode(elem) {
   var targetElementID = elem.getAttribute("data-target");
   var copyText = document.getElementById(targetElementID);
