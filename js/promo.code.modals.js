@@ -53,5 +53,7 @@ $(document).ready(function() {
 	$('#purpleCarrotPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=freshly') > -1) { 
 	$('#freshlyPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=gobble') > -1) { 
+	$('#gobblePromo').modal('show');
   }
 });
