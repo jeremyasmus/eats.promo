@@ -45,9 +45,7 @@ function outFunc() {
 }
 
 $(document).ready(function() {
-  if (window.location.href.indexOf('?offer=pipcorn') > -1) {
-    $('#pipcornPromo').modal('show');
-  } else if (window.location.href.indexOf('?offer=splendid-spoon') > -1) { 
+  if (window.location.href.indexOf('?offer=splendid-spoon') > -1) { 
 	$('#splendidSpoonPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=purple-carrot') > -1) { 
 	$('#purpleCarrotPromo').modal('show');
