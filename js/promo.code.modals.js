@@ -7,12 +7,12 @@ function copyPromoCode(elem) {
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
 
-  var tooltip = document.getElementsByClassName("tooltiptext");
+  var tooltip = document.getElementById("promoCodeTooltip");
   tooltip.innerHTML = "Promo copied!";
 }
 
 function outFunc() {
-  var tooltip = document.getElementsByClassName("tooltiptext");
+  var tooltip = document.getElementById("promoCodeTooltip");
   tooltip.innerHTML = "Copy promo code";
 }
 
