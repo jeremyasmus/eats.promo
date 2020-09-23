@@ -1,3 +1,2 @@
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.html?$ / [NC,R,L]
+RewriteRule ^index\.(php|html?)$ http://www.eats.promo/ [R=301,L]
