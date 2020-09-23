@@ -37,5 +37,7 @@ $(document).ready(function () {
     $('#plateJoyPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=everyplate') > -1) {
     $('#everyPlatePromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=postmates') > -1) {
+    $('#postmatesPromo').modal('show');
   }
 });
