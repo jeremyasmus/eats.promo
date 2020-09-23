@@ -23,7 +23,95 @@
 
 <body>
 
-<div w3-include-html="/includes/meal-kits-promo-code-modals.html"></div>
+<div class="modal fade" id="splendidSpoonPromo">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="offer-logo" style="background-color:#007c85">
+          <img class="img-fluid" src="/images/logos/white/splendid-spoon-logo-300px.png" alt="Splendid Spoon" title="Splendid Spoon" style="width:150px">
+        </div>
+        <div class="modal-offer">
+            <h4>$25 off + free shipping on your first order</h4>
+            <h5>Copy and paste this code during checkout</h5>
+        </div>
+        <div class="modal-promo-code-clip">
+          <input class="modal-promo-code-input" type="text" value="WELLNESS25OFF" id="splendidSpoonCode" readonly="readonly">
+          <div class="tooltip">
+            <button onclick="copyPromoCode(this)" data-target="splendidSpoonCode" onmouseout="outFunc()" class="promo-code-copy-button" style="margin: 0;"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Continue to <a href="https://splendidspoon.z724.net/mealdeals-25off" target="_blank" rel="sponsored">Splendid Spoon</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<div class="modal fade" id="purpleCarrotPromo">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="offer-logo" style="background-color:#490572">
+          <img class="img-fluid" src="/images/logos/white/purple-carrot-logo-300px.png" alt="Purple Carrot" title="Purple Carrot">
+        </div>
+        <div class="modal-offer">
+            <h4>$30 off + free shipping on your first order</h4>
+            <h5>Copy and paste this code during checkout</h5>
+        </div>
+        <div class="modal-promo-code-clip">
+          <input class="modal-promo-code-input" type="text" value="CARROT30" id="purpleCarrotCode" readonly="readonly">
+          <div class="tooltip">
+            <button onclick="copyPromoCode(this)" data-target="purpleCarrotCode" onmouseout="outFunc()" class="promo-code-copy-button" style="margin: 0;"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Continue to <a href="https://purple-carrot.wk5q.net/mealdeals" target="_blank" rel="sponsored">Purple Carrot</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="freshlyPromo">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="offer-logo" style="background-color:#003300">
+			<img class="img-fluid" src="/images/logos/white/freshly-logo-300px.png" alt="Freshly" title="Freshly" style="width:120px">
+        </div>
+        <div class="modal-offer">
+            <h4>$60 off first 4 boxes</h4>
+            <h5>Copy and paste this code during checkout</h5>
+        </div>
+        <div class="modal-promo-code-clip">
+          <input class="modal-promo-code-input" type="text" value="LAUNCH15" id="freshlyCode" readonly="readonly">
+          <div class="tooltip">
+            <button onclick="copyPromoCode(this)" data-target="freshlyCode" onmouseout="outFunc()" class="promo-code-copy-button" style="margin: 0;"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Continue to <a href="https://fxo.co/1214090/freshly60" target="_blank" rel="sponsored">Freshly</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div w3-include-html="/includes/navigation.html"></div>
 
