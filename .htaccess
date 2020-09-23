@@ -1,2 +1,1 @@
-RewriteEngine On
-RewriteRule ^index\.(php|html?)$ http://www.eats.promo/ [R=301,L]
+DirectoryIndex index.html index.php
