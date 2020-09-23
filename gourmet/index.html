@@ -23,17 +23,8 @@
 </head>
 
 <body>
-<script>
-	$(function(){
-  var includes = $('[data-include]');
-  jQuery.each(includes, function(){
-    var file = '/includes/' + $(this).data('include') + '.html';
-    $(this).load(file);
-  });
-});
-</script>
-<div data-include="navigation"></div>
-<!--<div w3-include-html="/includes/navigation.html"></div>-->
+
+<div w3-include-html="/includes/navigation.html"></div>
 	
 <div class="homepage-hero">
   <div class="container hero-text">
@@ -429,9 +420,9 @@
   </div>
 </div>
 	
-<!--<script>
+<script>
 includeHTML();
-</script>-->
+</script>
 	
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1413649-18"></script> 
