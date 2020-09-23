@@ -33,7 +33,7 @@ $(document).ready(function () {
     $('#greenChefPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=hungryroot') > -1) {
     $('#hungryrootPromo').modal('show');
-  } else if (window.location.href.indexOf('?offer=plate-joy') > -1) {
+  } else if (window.location.href.indexOf('?offer=platejoy') > -1) {
     $('#plateJoyPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=everyplate') > -1) {
     $('#everyPlatePromo').modal('show');
