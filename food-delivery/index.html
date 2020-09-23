@@ -24,6 +24,36 @@
 
 <body>
 
+<div class="modal fade" id="postmatesPromo">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12 offer-logo" style="background-color:#000000">
+			<img class="img-fluid" src="/images/logos/white/postmates-logo-300px.png" alt="Postmates" title="Postmates">
+		</div>
+        <div class="modal-offer">
+            <h4>$25 off + free shipping on your first order</h4>
+            <h5>Copy and paste this code during checkout</h5>
+        </div>
+        <div class="modal-promo-code-clip">
+          <input class="modal-promo-code-input" type="text" value="GETFOOD" id="postmatesCode" readonly="readonly">
+          <div class="tooltip">
+            <button onclick="copyPromoCode(this)" data-target="postmatesCode" onmouseout="outFunc()" class="promo-code-copy-button" style="margin: 0;"><span class="tooltiptext" id="promoCodeTooltip">Copy promo code</span>COPY</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Continue to <a href="https://consumeracquisition.jtlo.net/mealdeals100" target="_blank" rel="sponsored">Postmates</a></p>
+      </div>
+    </div>
+  </div>
+</div>	
+
 <div w3-include-html="/includes/navigation.html"></div>
 	
 <div class="homepage-hero">
@@ -55,7 +85,7 @@
                     <div class="col-sm-6 col-md-12" style="text-align:center">
                       <div class="coupon-promo"><span>$100</span> in delivery credit</div>
                     </div>
-                    <div class="col-sm-6 col-md-12"> <a href="https://consumeracquisition.jtlo.net/mealdeals100" target="_blank" class="green-offer-button">GET OFFER</a> </div>
+                    <div class="col-sm-6 col-md-12"> <a href="javascript:window.open('https://www.eats.promo/food-delivery/?offer=postmates');window.location.href='https://consumeracquisition.jtlo.net/mealdeals100'" class="green-offer-button" rel="sponsored">SHOW PROMO CODE</a> </div>
                   </div>
                 </div>
               </div>
