@@ -23,7 +23,15 @@
 </head>
 
 <body>
-
+<script>
+	$(function(){
+  var includes = $('[data-include]');
+  jQuery.each(includes, function(){
+    var file = '/includes/' + $(this).data('include') + '.html';
+    $(this).load(file);
+  });
+});
+</script>
 <div data-include="navigation"></div>
 <!--<div w3-include-html="/includes/navigation.html"></div>-->
 	

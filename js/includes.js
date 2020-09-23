@@ -1,13 +1,5 @@
 // HTML INCLUDE SCRIPT
 
-$(function(){
-  var includes = $('[data-include]');
-  jQuery.each(includes, function(){
-    var file = '/includes/' + $(this).data('include') + '.html';
-    $(this).load(file);
-  });
-});
-
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
