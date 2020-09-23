@@ -25,5 +25,17 @@ $(document).ready(function () {
     $('#freshlyPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=gobble') > -1) {
     $('#gobblePromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=hello-fresh') > -1) {
+    $('#helloFreshPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=blue-apron') > -1) {
+    $('#blueApronPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=green-chef') > -1) {
+    $('#greenChefPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=hungryroot') > -1) {
+    $('#hungryrootPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=plate-joy') > -1) {
+    $('#plateJoyPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=everyplate') > -1) {
+    $('#everyplatePromo').modal('show');
   }
 });
