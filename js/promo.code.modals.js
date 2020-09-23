@@ -36,6 +36,6 @@ $(document).ready(function () {
   } else if (window.location.href.indexOf('?offer=plate-joy') > -1) {
     $('#plateJoyPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=everyplate') > -1) {
-    $('#everyplatePromo').modal('show');
+    $('#everyPlatePromo').modal('show');
   }
 });
