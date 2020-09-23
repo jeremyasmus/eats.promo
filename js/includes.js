@@ -1,5 +1,7 @@
 // HTML INCLUDE SCRIPT
 
+includeHTML();
+
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
