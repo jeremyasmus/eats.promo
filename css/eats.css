@@ -192,8 +192,22 @@ h2 {
   line-height: 1.11111em;
 }
 /************************/
-/*****OFFEERS STYLES*****/
+/*****OFFERS STYLES*****/
 /************************/
+
+.featured-offer-stripe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+  background-color: #FFA000;
+  height: auto;
+  padding: 5px;
+  font-weight: 500;
+}
+.featured-offer-stripe p {
+  margin:0;
+}
 .offer-box {
   background: #ffffff;
   border: 1px solid #e2e2e2;
