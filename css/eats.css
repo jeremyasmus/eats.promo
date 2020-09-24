@@ -47,6 +47,9 @@
   .hero-text {
     padding: 0 40px !important;
   }
+  .featured-offer-stripe {
+	display: none;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .main-navigation li {
