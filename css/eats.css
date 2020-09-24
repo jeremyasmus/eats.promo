@@ -53,6 +53,9 @@
   .featured-offer-stripe + .offer-logo {
     border-radius: 5px 5px 0 0 !important;
   }
+  .empty-featured-offer-stripe {
+	display: none !important;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .main-navigation li {
@@ -216,6 +219,14 @@ h2 {
 }
 .featured-offer-stripe + .offer-logo {
   border-radius: 0;
+}
+.empty-featured-offer-stripe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 5px;
+  font-weight: 500;
 }
 .offer-box {
   background: #ffffff;
