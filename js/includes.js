@@ -27,10 +27,3 @@ function includeHTML() {
     }
   }
 }
-
-$(document).ready(function() {
-  $('.navbar-toggler').click(function() {
-    $('.hamburger-dropdown').removeClass('show');
-    $('.navbar-toggler').setAttribute('aria-expanded', 'false');
-  });
-});
