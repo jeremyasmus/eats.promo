@@ -47,15 +47,6 @@
   .hero-text {
     padding: 0 40px !important;
   }
-  .featured-offer-stripe {
-	display: none !important;
-  }
-  .featured-offer-stripe + .offer-logo {
-    border-radius: 5px 5px 0 0 !important;
-  }
-  .empty-featured-offer-stripe {
-	display: none !important;
-  }
 }
 @media only screen and (max-width: 1200px) {
   .main-navigation li {
@@ -67,8 +58,14 @@
   .main-navigation {
     display: none !important;
   }
+  .featured-offer-stripe {
+	display: none !important;
+  }
+  .featured-offer-stripe + .offer-logo {
+    border-radius: 5px 5px 0 0 !important;
+  }
   .empty-featured-offer-stripe {
-    padding: 5px !important;
+	display: none !important;
   }
 }
 @media only screen and (min-width: 993px) {
