@@ -119,8 +119,8 @@ body {
 }
 .main-navigation a:hover {
   text-decoration: none;
-  border-top: 2px solid #f79800;
-  border-bottom: 2px solid #f79800;
+  border-top: 2px solid #FFCB29;
+  border-bottom: 2px solid #FFCB29;
 }
 .hamburger {
   display: inline-flex;
@@ -506,7 +506,7 @@ h2 {
   margin-bottom: 0;
 }
 .category-box:hover {
-  color: #f79800;
+  color: #FFCB29;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 .meal-kits-bg {
