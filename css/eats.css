@@ -208,6 +208,9 @@ h2 {
 .featured-offer-stripe p {
   margin:0;
 }
+.featured-offer-stripe + .offer-box {
+  border-radius: 0;
+}
 .offer-box {
   background: #ffffff;
   border: 1px solid #e2e2e2;
