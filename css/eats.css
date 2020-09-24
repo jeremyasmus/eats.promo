@@ -214,7 +214,7 @@ h2 {
   padding: 5px;
   font-weight: 500;
 }
-.featured-offer-stripe p {
+.featured-offer-stripe p, .empty-featured-offer-stripe p {
   margin:0;
 }
 .featured-offer-stripe + .offer-logo {
