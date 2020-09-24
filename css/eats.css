@@ -67,6 +67,9 @@
   .main-navigation {
     display: none !important;
   }
+  .empty-featured-offer-stripe {
+    padding: 5px !important;
+  }
 }
 @media only screen and (min-width: 993px) {
   .hamburger, .hamburger-dropdown {
@@ -225,7 +228,7 @@ h2 {
   align-items: center;
   justify-content: center;
   height: auto;
-  padding: 5px;
+  padding: 0;
   font-weight: 500;
 }
 .offer-box {
