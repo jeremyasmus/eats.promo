@@ -208,7 +208,7 @@ h2 {
 .featured-offer-stripe p {
   margin:0;
 }
-.featured-offer-stripe + .offer-box {
+.featured-offer-stripe + .offer-logo {
   border-radius: 0;
 }
 .offer-box {
