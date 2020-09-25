@@ -39,5 +39,7 @@ $(document).ready(function () {
     $('#everyPlatePromo').modal('show');
   } else if (window.location.href.indexOf('?offer=postmates') > -1) {
     $('#postmatesPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=marley-spoon') > -1) {
+    $('#marleySpoonPromo').modal('show');
   }
 });
