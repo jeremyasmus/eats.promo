@@ -17,12 +17,12 @@ function outFunc() {
 }
 
 $(document).ready(function () {
-  if (window.location.href.indexOf('?offer=splendid-spoon') > -1) {
+  if (window.location.href.indexOf('?offer=freshly') > -1) {
+    $('#freshlyPromo').modal('show');
+  } else if (window.location.href.indexOf('?offer=splendid-spoon') > -1) {
     $('#splendidSpoonPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=purple-carrot') > -1) {
     $('#purpleCarrotPromo').modal('show');
-  } else if (window.location.href.indexOf('?offer=freshly') > -1) {
-    $('#freshlyPromo').modal('show');
   } else if (window.location.href.indexOf('?offer=gobble') > -1) {
     $('#gobblePromo').modal('show');
   } else if (window.location.href.indexOf('?offer=hellofresh') > -1) {
