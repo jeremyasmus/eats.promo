@@ -306,9 +306,7 @@ h2 {
 .detail-cta a {
   color: #0277bd;
 }
-.featured-tiles .detail-cta {
-  display: none !important;
-}
+
 /********************/
 /*****CTA STYLES*****/
 /********************/
